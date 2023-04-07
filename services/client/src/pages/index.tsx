@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
-import { AppDialogs, openAppDialogEvent } from '../stores';
+import { AppDialogs, openAppDialogEvent } from '@store';
 
-import { EnterNameDialog } from '../components/dialogs/EnterNameDialog';
+import { EnterNameDialog } from '@components/dialogs/EnterNameDialog';
 
 export default function Home() {
     useEffect(() => {
@@ -25,7 +25,6 @@ export async function getStaticProps({ locale }) {
                 'dialogs',
                 'forms',
             ])),
-            // Will be passed to the page component as props
         },
     };
 }

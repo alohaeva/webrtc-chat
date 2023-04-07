@@ -1,9 +1,10 @@
 import React, { Fragment, memo } from 'react';
 import { Dialog, Transition } from '@headlessui/react';
 
-import { Backdrop } from '../Backdrop';
+import { Backdrop } from '@components/common/Backdrop';
 
 import styles from './Modal.module.scss';
+
 import { ModalProps } from './Modal.types';
 
 const Modal = memo(({ open, onClose, title, body, buttons }: ModalProps) => {

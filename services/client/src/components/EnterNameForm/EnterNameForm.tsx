@@ -3,10 +3,10 @@ import { SubmitHandler, useForm } from 'react-hook-form';
 import { z } from 'zod';
 import { zodResolver } from '@hookform/resolvers/zod';
 
-import { Input } from '../common/Input';
-import { Button } from '../common/Button';
-import { Translation } from '../common/Translation';
-import { ErrorMessage } from '../common/ErrorMessage';
+import { Input } from '@components/common/Input';
+import { Translation } from '@components/common/Translation';
+import { ErrorMessage } from '@components/common/ErrorMessage';
+import { Button } from '@components/common/Button';
 
 import { EnterNameFormProps } from './EnterNameFormProps.types';
 

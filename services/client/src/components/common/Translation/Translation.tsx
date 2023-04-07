@@ -1,5 +1,5 @@
 import { memo } from 'react';
-import { useTranslate } from '../../../hooks/useTranslation';
+import { useTranslate } from '@hooks/useTranslation';
 import { TranslationProps } from './Translation.types';
 
 const Translation = memo(

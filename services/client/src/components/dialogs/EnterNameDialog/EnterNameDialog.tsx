@@ -1,9 +1,9 @@
 import React, { memo, useCallback } from 'react';
 import { useStore } from 'effector-react';
 
-import { Modal } from '../../common/Modal';
-import { EnterNameForm } from '../../EnterNameForm';
-import { Translation } from '../../common/Translation';
+import { Modal } from '@components/common/Modal';
+import { EnterNameForm } from '@components/EnterNameForm';
+import { Translation } from '@components/common/Translation';
 
 import {
     $enterNameDialogStore,
