@@ -1,0 +1,29 @@
+.inputWrapper {
+  @apply relative inline-flex flex-col max-w-full;
+
+  &.fullWidth {
+    @apply w-full;
+  }
+}
+
+.label {
+  @apply text-overflow max-w-full;
+}
+
+.inputRoot {
+  @apply mt-2;
+}
+
+.input {
+  @apply w-full px-3 py-2 bg-pink-200 outline-none rounded-md transition-colors;
+
+  &:focus {
+    @apply bg-pink-100;
+
+    .inputFocus {
+    }
+  }
+}
+
+.inputFocus {
+}

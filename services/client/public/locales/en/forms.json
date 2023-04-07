@@ -1,0 +1,11 @@
+{
+  "enterNameForm": {
+    "input": "Enter your name",
+    "button": "Join room",
+    "errors": {
+      "name": {
+        "required": "Name is required"
+      }
+    }
+  }
+}

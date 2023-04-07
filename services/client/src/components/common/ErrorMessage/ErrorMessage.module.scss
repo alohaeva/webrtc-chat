@@ -1,0 +1,6 @@
+.errorWrapper {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  @apply text-red-500;
+}
