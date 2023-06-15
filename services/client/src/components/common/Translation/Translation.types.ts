@@ -1,5 +1,7 @@
+import { Resources } from '../../../types';
+
 export type TranslationProps = {
-    nameSpace: string;
-    translation: string;
-    options?: Record<string, unknown>;
+  nameSpace: keyof Resources;
+  translation: string;
+  options?: Record<string, unknown>;
 };

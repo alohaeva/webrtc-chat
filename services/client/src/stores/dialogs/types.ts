@@ -1,3 +1,3 @@
 export enum AppDialogs {
-    EnterName = 'EnterName',
+  EnterName = 'EnterName',
 }

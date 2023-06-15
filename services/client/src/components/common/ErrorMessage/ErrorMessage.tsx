@@ -1,18 +1,23 @@
 import React, { memo } from 'react';
 import { ExclamationCircleIcon } from '@heroicons/react/20/solid';
 
-import styles from './ErrorMessage.module.scss';
+import { Typography } from '../Typography';
 
+import styles from './ErrorMessage.module.scss';
 import { ErrorMessageProps } from './ErrorMessage.types';
 
-const ErrorMessage = memo(({ error }: ErrorMessageProps) => {
-    return (
-        <div className={styles.errorWrapper}>
-            {/*<ErrorIcon />*/}
-            <ExclamationCircleIcon width={16} height={16} />
-            {error}
-        </div>
-    );
+const ErrorMessage = memo(({ isErrorVisible, error }: ErrorMessageProps) => {
+  if (!isErrorVisible) return null;
+
+  return (
+    <div className={styles.errorWrapper}>
+      <ExclamationCircleIcon
+        width={16}
+        height={16}
+      />
+      <Typography variant="body2">{error}</Typography>
+    </div>
+  );
 });
 
 export default ErrorMessage;

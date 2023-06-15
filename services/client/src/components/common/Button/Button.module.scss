@@ -1,20 +1,30 @@
 .base {
   @apply inline-flex
   justify-center
-  rounded-md
   border
   border-transparent
-  bg-blue-900
-  px-4
-  py-2
-  text-sm
-  font-medium
-  text-blue-100
-  hover:bg-blue-200
-  hover:text-black
   focus:outline-none
   focus-visible:ring-2
   focus-visible:ring-blue-500
   focus-visible:ring-offset-2
   transition-colors;
+}
+
+.primary {
+  @apply bg-blue-600
+    text-blue-100
+    hover:bg-blue-800;
+}
+
+.secondary {
+  @apply bg-blue-200
+    text-black
+    hover:bg-blue-400;
+}
+
+.size-md {
+  @apply rounded-md
+    font-medium
+    px-4
+    py-2;
 }

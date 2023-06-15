@@ -1,4 +1,4 @@
 export type EnterNameFormProps<Data> = {
-    onSubmit: (data: Data) => void;
-    onCancel: () => void;
+  onSubmit: (data: Data) => void;
+  onCancel?: () => void;
 };

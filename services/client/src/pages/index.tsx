@@ -1,30 +1,26 @@
-import React, { useEffect } from 'react';
+import React from 'react';
+import { GetStaticPropsContext } from 'next/types';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
-import { AppDialogs, openAppDialogEvent } from '@store';
+import { Layout } from '@components/Layout';
 
-import { EnterNameDialog } from '@components/dialogs/EnterNameDialog';
+import { EnterNameContainer } from '../containers/EnterNameContainer';
 
 export default function Home() {
-    useEffect(() => {
-        openAppDialogEvent(AppDialogs.EnterName);
-    }, []);
-
-    return (
-        <>
-            <EnterNameDialog />
-        </>
-    );
+  return (
+    <Layout>
+      <EnterNameContainer />
+    </Layout>
+  );
 }
 
-export async function getStaticProps({ locale }) {
-    return {
-        props: {
-            ...(await serverSideTranslations(locale, [
-                'common',
-                'dialogs',
-                'forms',
-            ])),
-        },
-    };
-}
+export const getStaticProps = async ({ locale }: GetStaticPropsContext) => ({
+  props: {
+    ...(await serverSideTranslations(locale ?? 'en', [
+      'common',
+      'dialogs',
+      'forms',
+      'general',
+    ])),
+  },
+});

@@ -1,0 +1,23 @@
+.body1 {
+  font-size: 1rem;
+}
+
+.body3 {
+  font-size: 0.5rem;
+}
+
+.body2 {
+  font-size: 0.75rem;
+}
+
+.h4 {
+  font-size: 1.2rem;
+}
+
+.noWrap {
+  @apply text-overflow;
+}
+
+.bold {
+  font-weight: 600;
+}

@@ -10,3 +10,17 @@
     display: block;
   }
 }
+
+html {
+  --shadowKeyUmbraOpacity: 0.2;
+  --shadowKeyPenumbraOpacity: 0.14;
+  --shadowAmbientShadowOpacity: 0.12;
+}
+
+#__next {
+  position: absolute;
+  inset: 0;
+  display: flex;
+}
+
+

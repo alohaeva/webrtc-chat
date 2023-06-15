@@ -5,7 +5,8 @@
     "errors": {
       "name": {
         "required": "Name is required"
-      }
+      },
+      "maxLength": "Name must be less than 100 characters"
     }
   }
 }

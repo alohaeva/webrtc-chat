@@ -1,9 +1,9 @@
 import {
-    $enterNameDialogStore,
-    closeEnterNameDialogEvent,
-    openEnterNameDialogEvent,
+  $enterNameDialogStore,
+  closeEnterNameDialogEvent,
+  openEnterNameDialogEvent,
 } from './index';
 
 $enterNameDialogStore
-    .on(openEnterNameDialogEvent, () => true)
-    .on(closeEnterNameDialogEvent, () => false);
+  .on(openEnterNameDialogEvent, () => true)
+  .on(closeEnterNameDialogEvent, () => false);

@@ -1,3 +1,3 @@
 export type BackdropProps = {
-    animate: boolean;
+  animate: boolean;
 };

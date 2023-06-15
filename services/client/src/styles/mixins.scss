@@ -1,0 +1,5 @@
+@mixin createBoxShadow($_1, $_2, $_3, $_4, $_5, $_6, $_7, $_8, $_9, $_10, $_11, $_12) {
+  box-shadow: #{$_1}px #{$_2}px #{$_3}px #{$_4}px rgba(0,0,0, var(--shadowKeyUmbraOpacity)),
+  #{$_5}px #{$_6}px #{$_7}px #{$_8}px rgba(0,0,0, var(--shadowKeyPenumbraOpacity)),
+  #{$_9}px #{$_10}px #{$_11}px #{$_12}px rgba(0,0,0, var(--shadowAmbientShadowOpacity));
+}

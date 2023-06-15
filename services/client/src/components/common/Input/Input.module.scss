@@ -15,15 +15,9 @@
 }
 
 .input {
-  @apply w-full px-3 py-2 bg-pink-200 outline-none rounded-md transition-colors;
+  @apply w-full px-3 py-2 bg-pink-100 outline-none rounded-md transition-colors;
 
   &:focus {
-    @apply bg-pink-100;
-
-    .inputFocus {
-    }
+    @apply bg-pink-200;
   }
-}
-
-.inputFocus {
 }

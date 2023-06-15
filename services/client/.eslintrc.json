@@ -1,6 +1,27 @@
 {
+    "plugins": ["prettier"],
     "extends": ["next/core-web-vitals", "prettier"],
     "rules": {
-        "react/display-name": "off"
+        "prettier/prettier": "error",
+        "react/display-name": "off",
+        "object-curly-newline": ["error", {
+            "ObjectExpression": { "multiline": true, "minProperties": 1 }
+        }],
+        "import/order": [
+            "error",
+            {
+                "newlines-between": "always",
+                "groups": [
+                    "builtin",
+                    "external",
+                    "internal",
+                    "parent",
+                    "sibling",
+                    "index",
+                    "object",
+                    "type"
+                ]
+            }
+        ]
     }
 }

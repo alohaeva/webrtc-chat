@@ -1,0 +1,28 @@
+.flexContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.fullWidth {
+  flex-basis: 100%;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.justifyContent-center {
+  justify-content: center;
+}
+
+.justifyContent-initial {
+  justify-content: initial;
+}
+
+.alignItems-center {
+  align-items: center;
+}
+
+.alignItems-initial {
+  align-items: initial;
+}
