@@ -50,12 +50,12 @@ const EnterNameForm = ({
         <Input
           id="name"
           fullWidth
-          // label={
-          //   <Translation
-          //     nameSpace="forms"
-          //     translation="enterNameForm.input"
-          //   />
-          // }
+          label={
+            <Translation
+              nameSpace="forms"
+              translation="enterNameForm.input"
+            />
+          }
           {...inputFormProps}
         />
         <ErrorMessage
@@ -78,21 +78,18 @@ const EnterNameForm = ({
             />
           }
         />
-        {onCancel
-            ? (
-              <Button
-                onClick={onCancel}
-                variant="secondary"
-                label={
-                  <Translation
-                      nameSpace="common"
-                      translation="buttons.cancel"
-                  />
-                }
+        {onCancel ? (
+          <Button
+            onClick={onCancel}
+            variant="secondary"
+            label={
+              <Translation
+                nameSpace="common"
+                translation="buttons.cancel"
               />
-            )
-            : null
-        }
+            }
+          />
+        ) : null}
       </div>
     </form>
   );
